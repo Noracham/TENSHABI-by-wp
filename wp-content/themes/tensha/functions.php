@@ -10,4 +10,5 @@ function load_my_styles()
     wp_enqueue_script('inview', 'https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js');
 }
 add_action('wp_enqueue_scripts', 'load_my_styles');
-//スクリプトファイル読み込み
+
+add_theme_support('post-thumbnails');

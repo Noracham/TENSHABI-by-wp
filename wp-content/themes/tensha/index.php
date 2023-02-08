@@ -15,22 +15,28 @@
     </div>
 </section>
 <section class="shops" id="shops">
-    <h1 class="subtitle">出店一覧<br><span>SHOPS</span></h1>
-    <div class="shop">
-        <div class="shop_info">
-            <h2>串焼き極ム。</h2>
-            <p>串焼きを食べたいならここ！<br>
-                串焼きの他にもドリンクやサブメニュー<br>
-                もご用意しております。</p>
-            <div class="shop_fl">
-                <div class="icons"><img src="img/food_list.png" alt=""><img src="img/drink_list.png" alt=""></div>
-                <a href="shop1.html">お店を見る</a>
+    <h1 class="subtitle">お店一覧<br><span>SHOPS</span></h1>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <div class="shop">
+                <div class="shop_info">
+                    <h2><?php the_title() ?></h2>
+                    <p><?php the_excerpt(); ?></p>
+                    <div class="shop_fl">
+                        <div class="icons"><img src="img/food_list.png" alt=""><img src="img/drink_list.png" alt=""></div>
+                        <a href="<?php the_permalink() ?>">お店を見る</a>
+                    </div>
+                </div>
+                <div class="shop_frame">
+                    <?php
+                    if (has_post_thumbnail()) {
+                        $img_url = wp_get_attachment_url(get_post_thumbnail_id());
+                        $bg_style = 'style="background-image:url(' . $img_url . ')"';
+                    }; ?>
+                    <div class="shop_img" <?php echo $bg_style; ?>></div>
+                </div>
             </div>
-        </div>
-        <div class="shop_frame">
-            <div class="shop_img"></div>
-        </div>
-    </div>
+    <?php endwhile;
+    endif; ?>
 </section>
 
 
