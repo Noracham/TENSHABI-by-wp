@@ -44,32 +44,30 @@ h1 {
   top: 20px;
   left: 10px;
   z-index: 999;
-  @include m.mq(sp){
+  @include m.mq(sp) {
     left: -40px;
     top: -85px;
     width: 120px;
   }
   li {
-    &:nth-of-type(1){
+    &:nth-of-type(1) {
       top: 350px;
       left: 40px;
-      box-shadow: rgba(240, 241, 229,0.95) 0 0 10px ;
+      box-shadow: rgba(240, 241, 229, 0.95) 0 0 10px;
       background-color: rgba(240, 241, 229);
       z-index: 2;
       animation: main_In forwards;
       animation-delay: 1.4s;
       animation-duration: 0.8s;
-      @include m.mq(sp){
+      @include m.mq(sp) {
         width: 95px;
         height: 95px;
         font-size: 1.8rem;
         top: 340px;
         left: 50px;
       }
-
-    
     }
-    &:nth-of-type(2){
+    &:nth-of-type(2) {
       top: 120px;
       left: 130px;
       width: 150px;
@@ -79,49 +77,46 @@ h1 {
       animation: main_In forwards;
       animation-delay: 1.2s;
       animation-duration: 0.8s;
-      @include m.mq(sp){
+      @include m.mq(sp) {
         width: 110px;
         height: 110px;
         font-size: 1.8rem;
         top: 160px;
         left: 110px;
       }
-    
     }
-    &:nth-of-type(3){
+    &:nth-of-type(3) {
       top: 160px;
       left: 95px;
       width: 110px;
       height: 110px;
-      font-size: 2rem;
+      font-size: 1.7rem;
       animation: main_In forwards;
       animation-delay: 1.6s;
       animation-duration: 0.8s;
-      @include m.mq(sp){
+      @include m.mq(sp) {
         top: 200px;
         width: 80px;
         height: 80px;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
       }
 
-    
-      span{
+      span {
         font-size: 1rem;
-  
       }
     }
     transition: 0.8s;
     opacity: 0;
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
     position: absolute;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(69, 36, 0);
-    box-shadow: rgba(69, 36, 0,0.95) 0 0 20px ;
-        &:not(:first-child){
+    box-shadow: rgba(69, 36, 0, 0.95) 0 0 20px;
+    &:not(:first-child) {
       margin-top: 5px;
       // border-bottom: 1px solid #000;
     }
@@ -132,10 +127,10 @@ h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: rgb(243, 117, 0);
-    span{
+    span {
       font-size: 1.3rem;
     }
-    @include m.mq(sp){
+    @include m.mq(sp) {
       font-size: 1.8rem;
     }
     // &:nth-of-type(1) {
@@ -182,7 +177,6 @@ h1 {
   }
 }
 
-
 //scroll-animation
 .v_inblur {
   opacity: 0;
@@ -209,8 +203,8 @@ h1 {
   animation-fill-mode: forwards;
 }
 .visible_inup {
-    animation-name: visible_inup;
-    transition: .5s;
+  animation-name: visible_inup;
+  transition: 0.5s;
   @keyframes visible_inup {
     from {
       opacity: 0;
@@ -223,64 +217,64 @@ h1 {
   }
 }
 //使い回しpadding
-.sec_padding{
+.sec_padding {
   padding: 5% 0;
   @include m.mq(sp) {
     padding: 15% 0;
   }
 }
 //見出し
-.subtitle{
+.subtitle {
   font-size: 5rem;
   text-align: center;
   margin: 0;
-  span{
+  span {
     font-size: 2.5rem;
     position: relative;
     top: -20px;
-    @include m.mq(sp){
+    @include m.mq(sp) {
       font-size: 1.7rem;
     }
   }
 }
 //inアニメーション
-.in_blur{
+.in_blur {
   animation: in_blur 1s 0.5s forwards;
   @keyframes in_blur {
-    from{
+    from {
       opacity: 0;
       filter: blur(10px);
     }
-    to{
+    to {
       opacity: 1;
       filter: blur(0);
     }
   }
 }
-.in_scale{
+.in_scale {
   animation: in_scale 0.8s 0.5s forwards;
   @keyframes in_scale {
-    from{
+    from {
       opacity: 0;
       filter: blur(10px);
-     }
-    to{
+    }
+    to {
       opacity: 1;
       filter: blur(0);
-     }
-    } 
+    }
   }
-.in_slide{
+}
+.in_slide {
   animation: in_slide 0.8s 0.8s forwards;
   @keyframes in_slide {
-    from{
+    from {
       opacity: 0;
       transform: translateY(50px);
     }
-    to{
+    to {
       opacity: 1;
       transform: translateY(0);
-    }    
+    }
   }
 }
 

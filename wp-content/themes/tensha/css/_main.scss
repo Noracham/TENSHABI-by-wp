@@ -2,10 +2,20 @@
 @use "mixin" as m;
 
 //main
+.hero {
+  position: absolute;
+  width: 100vw;
+  // background-color: red;
+}
 .main_visu {
   position: relative;
   width: 100%;
   height: calc(100vh);
+  // background-color: red;
+  // background-image: url(../img/shop1_visu2.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   .link_icon {
     position: absolute;
     bottom: 10px;
@@ -19,11 +29,11 @@
     z-index: 999;
     &:nth-of-type(2) {
       left: 85px;
-      @include m.mq(sp){
+      @include m.mq(sp) {
         left: 70px;
       }
     }
-    @include m.mq(sp){
+    @include m.mq(sp) {
       width: 25px;
       height: 25px;
     }
@@ -40,7 +50,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-color: rgba(240, 241, 229);
-  box-shadow: rgba(240, 241, 229,0.95) 0 0 20px ;
+  box-shadow: rgba(240, 241, 229, 0.95) 0 0 20px;
   position: absolute;
   top: -8px;
   width: 200px;
@@ -53,7 +63,7 @@
   animation-delay: 0.5s;
   animation-duration: 0.8s;
   opacity: 0;
-  @include m.mq(sp){
+  @include m.mq(sp) {
     width: 140px;
     height: 140px;
     padding: 25px;
@@ -69,18 +79,19 @@
       opacity: 1;
     }
   }
-  a{
+  a {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;left: 0;
+    top: 0;
+    left: 0;
   }
 }
 
-#slider {
-  width: 100%;
-  height: 100vh;
-}
+// #slider {
+//   width: 100%;
+//   height: 100vh;
+// }
 
 //news(お知らせ)
 .news {
@@ -183,8 +194,8 @@
     .ap_i {
       opacity: 0;
       box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.357);
-      @include m.mq(sp){
-      box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.357);
+      @include m.mq(sp) {
+        box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.357);
       }
       &:nth-of-type(1) {
         background-image: url(../img/paintV3_shop1_visu1.jpg);
@@ -456,8 +467,8 @@ footer {
     width: 450px;
     height: 140px;
     background-color: rgb(240, 241, 229);
-    @include m.mq(sp){
-    background-color: #341800;
+    @include m.mq(sp) {
+      background-color: #341800;
       width: 100vw;
       height: 100px;
       bottom: 0;
@@ -470,7 +481,7 @@ footer {
       text-align: center;
       font-size: 6.5rem;
       padding-top: 10px;
-      @include m.mq(sp){
+      @include m.mq(sp) {
         margin: 0;
         top: -5px;
         font-size: 5.3rem;
@@ -480,7 +491,7 @@ footer {
         bottom: 30px;
         color: #ffba00;
         font-size: 2.2rem;
-        @include m.mq(sp){
+        @include m.mq(sp) {
           font-size: 1.8rem;
         }
       }
@@ -491,8 +502,8 @@ footer {
   border-top: #341800 5px solid;
   padding-bottom: 10%;
   background-color: rgb(240, 241, 229);
-  @include m.mq(sp){
-    padding-bottom:20%;
+  @include m.mq(sp) {
+    padding-bottom: 20%;
   }
   .genre {
     margin: 0 auto;
@@ -502,14 +513,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include m.mq(tab){
+    @include m.mq(tab) {
       width: 85%;
     }
-    @include m.mq(sp){
+    @include m.mq(sp) {
       width: 95%;
     }
     .genre_in {
-      background-color: #271C10;
+      background-color: #271c10;
       width: 200px;
       height: 60px;
       padding: 5px;
@@ -517,7 +528,7 @@ footer {
       justify-content: center;
       align-items: center;
       border-radius: 10px;
-      @include m.mq(sp){
+      @include m.mq(sp) {
         width: 30%;
         height: 40px;
       }
@@ -525,21 +536,21 @@ footer {
         height: 75%;
         padding: 0 10px;
       }
-      &:last-child{
-        img{
+      &:last-child {
+        img {
           padding: 0 5px;
         }
       }
       span {
         font-size: 4rem;
         color: #fff;
-        @include m.mq(sp){
+        @include m.mq(sp) {
           font-size: 2.5rem;
         }
       }
     }
   }
-  .info_txt{
+  .info_txt {
     position: relative;
     background-color: #fff;
     border: #341800 3px solid;
@@ -550,133 +561,130 @@ footer {
     line-height: 4rem;
     font-size: 2rem;
     margin: 0 auto;
-    @include m.mq(tab){
+    @include m.mq(tab) {
       width: 85%;
     }
-    @include m.mq(sp){
+    @include m.mq(sp) {
       width: 90%;
       font-size: 1.6rem;
     }
   }
-  .info_times{
+  .info_times {
     font-size: 1.6rem;
     line-height: 2.5rem;
     text-align: right;
     margin: 7% 10% 0 0;
-    @include m.mq(sp){
-      margin:15% 3% 0 0;
+    @include m.mq(sp) {
+      margin: 15% 3% 0 0;
     }
   }
 }
-.shop_menu{
+.shop_menu {
   background-color: #fff;
 }
-.pickup_menu{
-  max-width: calc(1920px*0.9);
+.pickup_menu {
+  max-width: calc(1920px * 0.9);
   width: 90%;
   margin: 5%;
   display: flex;
   justify-content: space-around;
-  @include m.mq(sp){
+  @include m.mq(sp) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin-left: 0;
   }
-  }
-  .pickup_one{
-    opacity: 0;
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    @include m.mq(sp){
-      width: 100%;
-      align-items: center;
-      &:not(:first-child){
-        margin-top: 10%;
-
-      }
-    }
-    p{
-      display: flex;
-      justify-content: space-between;
-      font-size: 2rem;
-      @include m.mq(tab){
-        font-size: 1.7rem;
-      }
-      @include m.mq(sp){
-        font-size: 2rem;
-        width: 95%;
-      }
-    }
-  }
-  .pickup_img{
+}
+.pickup_one {
+  opacity: 0;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  @include m.mq(sp) {
     width: 100%;
-    // height: auto;
-    box-shadow: #000 0 0 5px ;
-    @include m.mq(sp){
+    align-items: center;
+    &:not(:first-child) {
+      margin-top: 10%;
+    }
+  }
+  p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    @include m.mq(tab) {
+      font-size: 1.7rem;
+    }
+    @include m.mq(sp) {
+      font-size: 2rem;
       width: 95%;
     }
-    img{
-      aspect-ratio: 4/3;
-      width: 100%;
-      object-fit: contain;
-      vertical-align: top;
-    }
+  }
+}
+.pickup_img {
+  width: 100%;
+  // height: auto;
+  box-shadow: #000 0 0 5px;
+  @include m.mq(sp) {
+    width: 95%;
+  }
+  img {
+    aspect-ratio: 4/3;
+    width: 100%;
+    object-fit: contain;
+    vertical-align: top;
+  }
 
-
-  p{
+  p {
     font-size: 2rem;
   }
 }
-.other_menu{
+.other_menu {
   margin: 10% 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  @include m.mq(sp){
+  @include m.mq(sp) {
     flex-direction: column;
   }
-  .other_menu_img{
+  .other_menu_img {
     opacity: 0;
     width: 40%;
     height: auto;
-    @include m.mq(sp){
+    @include m.mq(sp) {
       width: 95%;
     }
-    img{
-      box-shadow: #000 0 0 5px ;
+    img {
+      box-shadow: #000 0 0 5px;
       object-fit: contain;
       width: 100%;
       // height: 100%;
       vertical-align: top;
     }
   }
-  .other_menu_list{
+  .other_menu_list {
     width: 35%;
     margin-left: 5%;
     font-size: 2.3rem;
-    
-    @include m.mq(tab){
+
+    @include m.mq(tab) {
       font-size: 2rem;
     }
-    @include m.mq(sp){
+    @include m.mq(sp) {
       margin-left: 0;
       margin-top: 10%;
       width: 95%;
     }
-    dl{
+    dl {
       margin: 0;
       padding: 5% 0;
       border-bottom: 1px solid #000;
       display: flex;
       justify-content: space-between;
-      &:first-child{
+      &:first-child {
         border-top: 1px solid #000;
       }
     }
-
   }
 }
