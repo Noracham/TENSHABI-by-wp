@@ -772,7 +772,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: #341800;
+  background-color: #341801;
 }
 @media screen and (max-width: 768px) {
   footer {
@@ -780,6 +780,7 @@ footer {
   }
 }
 footer .com_info {
+  width: 33%;
   margin: 20px;
   color: #fff;
   font-size: 1.5rem;
@@ -791,8 +792,9 @@ footer .com_info {
   }
 }
 footer .f_logo {
+  text-align: center;
+  width: 33%;
   justify-self: center;
-  width: 300px;
   padding: 50px 0;
 }
 @media screen and (max-width: 768px) {
@@ -802,12 +804,14 @@ footer .f_logo {
   }
 }
 footer .f_logo img {
-  width: 100%;
+  width: 50%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 footer .f_link {
+  width: 33%;
   align-self: flex-end;
+  text-align: right;
 }
 @media screen and (max-width: 768px) {
   footer .f_link {

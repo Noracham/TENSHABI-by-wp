@@ -7,8 +7,8 @@
 
     <div class="f_logo"><img src="<?php echo esc_url(get_theme_file_uri('img/tensya_square.png')) ?>" alt="てんしゃ"></div>
     <div class="f_link">
-        <img src="img/Icon awesome-instagram.png" alt="instagram">
-        <img src="img/Icon_map.png" alt="">
+        <img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-instagram.png')) ?>" alt="instagram">
+        <img src="<?php echo esc_url(get_theme_file_uri('img/Icon_map.png')) ?>" alt="map">
     </div>
 </footer>
 
