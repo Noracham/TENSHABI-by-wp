@@ -461,6 +461,9 @@ h1 {
 .news .news_list dl dt {
   justify-self: start;
 }
+.news .news_list dl dd a {
+  color: #000;
+}
 
 .subtitle {
   font-size: 6rem;
