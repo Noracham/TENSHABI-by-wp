@@ -353,22 +353,23 @@
   @include m.mq(sp) {
   }
   .maps {
-    margin-top: 8%;
-    padding-bottom: 10%;
-    width: 100%;
+    margin: 7% auto;
+    width: 70%;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
     @include m.mq(sp) {
-      margin-top: 15%;
+      width: 100%;
+      margin: 15% auto;
       flex-direction: column;
       align-items: center;
     }
     .hand_map {
-      width: 40%;
+      width: 80%;
       margin-right: 2%;
       @include m.mq(sp) {
         margin-top: 5%;
-        width: 98%;
         margin-right: 0;
       }
       img {
@@ -379,7 +380,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 40%;
+      width: 100%;
       @include m.mq(sp) {
         margin-top: 5%;
         width: 98%;
@@ -387,7 +388,7 @@
       iframe {
         border: 1px solid #000;
         width: 100%;
-        aspect-ratio: 3/4.5;
+        aspect-ratio: 3/2;
       }
       a {
         display: flex;
@@ -697,4 +698,12 @@ footer {
       }
     }
   }
+}
+
+//地図切り替え
+#map-change {
+  width: 200px;
+  height: 40px;
+  font-size: 2rem;
+  align-self: flex-start;
 }

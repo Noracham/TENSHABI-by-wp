@@ -78,6 +78,7 @@
             <?php endwhile; ?>
         <?php endif; ?>
     </dl>
+    <?php get_template_part('access'); ?>
 </section>
 
 

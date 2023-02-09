@@ -714,27 +714,27 @@ h1 {
   background-color: rgb(240, 241, 229);
 }
 .floormap .maps {
-  margin-top: 8%;
-  padding-bottom: 10%;
-  width: 100%;
+  margin: 7% auto;
+  width: 70%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .floormap .maps {
-    margin-top: 15%;
+    width: 100%;
+    margin: 15% auto;
     flex-direction: column;
     align-items: center;
   }
 }
 .floormap .maps .hand_map {
-  width: 40%;
+  width: 80%;
   margin-right: 2%;
 }
 @media screen and (max-width: 768px) {
   .floormap .maps .hand_map {
     margin-top: 5%;
-    width: 98%;
     margin-right: 0;
   }
 }
@@ -745,7 +745,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   .floormap .maps .g_map {
@@ -756,7 +756,7 @@ h1 {
 .floormap .maps .g_map iframe {
   border: 1px solid #000;
   width: 100%;
-  aspect-ratio: 3/4.5;
+  aspect-ratio: 3/2;
 }
 .floormap .maps .g_map a {
   display: flex;
@@ -1116,4 +1116,11 @@ footer .f_link img {
 }
 .other_menu .other_menu_list dl:first-child {
   border-top: 1px solid #000;
+}
+
+#map-change {
+  width: 200px;
+  height: 40px;
+  font-size: 2rem;
+  align-self: flex-start;
 }/*# sourceMappingURL=style.css.map */
