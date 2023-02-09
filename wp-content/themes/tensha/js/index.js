@@ -46,6 +46,9 @@ $(function () {
     } else if (val == "shop2") {
       map_url =
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22095.119429347462!2d136.89309542178896!3d35.16231592564255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6003772c44f4f335%3A0x3947d91f2b70d713!2z5ZCN5Y-k5bGL5biC56eR5a2m6aSo!5e0!3m2!1sja!2sjp!4v1675955995064!5m2!1sja!2sjp";
+    } else {
+      map_url =
+        "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6505.653875722156!2d136.9347973758865!3d35.38474806810234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60030f11aa5f8fe5%3A0x2646d20f043a3ed8!2z54qs5bGx5Z-O5LiL55S6!5e0!3m2!1sja!2sjp!4v1668129368537!5m2!1sja!2sjp";
     }
 
     $(".g_map iframe").attr("src", map_url);

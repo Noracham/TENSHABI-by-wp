@@ -78,8 +78,8 @@
             <?php endwhile; ?>
         <?php endif; ?>
     </dl>
-    <?php get_template_part('access'); ?>
 </section>
+<?php get_template_part('access'); ?>
 
 
 
