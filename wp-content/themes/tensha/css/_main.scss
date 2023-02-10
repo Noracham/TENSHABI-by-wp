@@ -261,6 +261,7 @@
       align-items: center;
     }
     .shop_info {
+      min-height: 392px;
       width: 30%;
       margin: 0 5%;
       display: flex;
@@ -275,7 +276,12 @@
       h2 {
         position: relative;
         font-size: 6rem;
+        @include m.mq(tab) {
+          max-width: 500px;
+          text-align: center;
+        }
         @include m.mq(sp) {
+          text-align: center;
           font-size: 5rem;
         }
         &::after {
@@ -287,10 +293,14 @@
           background-blend-mode: lighten;
           background-size: cover;
           left: -2rem;
-          bottom: 0;
+          bottom: -5px;
+          transform: translateX(5%);
+          @include m.mq(tab) {
+            width: 100%;
+          }
           @include m.mq(sp) {
-            width: 30rem;
-            left: -1rem;
+            width: 90%;
+            left: 0;
           }
         }
       }
