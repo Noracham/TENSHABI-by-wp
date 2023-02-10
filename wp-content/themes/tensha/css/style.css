@@ -474,6 +474,17 @@ h1 {
 .news .news_list dl dd a {
   color: #000;
 }
+.news .news_link {
+  margin-top: 40px;
+  display: inline-block;
+  color: #000;
+  font-size: 2rem;
+  border-bottom: 1px solid #000;
+  transition: all 0.2s;
+}
+.news .news_link:hover {
+  opacity: 0.3;
+}
 
 .subtitle {
   font-size: 6rem;

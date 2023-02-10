@@ -77,6 +77,7 @@
                 </dl>
             <?php endwhile; ?>
         <?php endif; ?>
+        <a class="news_link" href="<?php esc_url(home_url('/category/news/')) ?> ">お知らせを見る</a>
     </dl>
 </section>
 <?php get_template_part('access'); ?>

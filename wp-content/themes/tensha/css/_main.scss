@@ -140,6 +140,17 @@
       }
     }
   }
+  .news_link {
+    margin-top: 40px;
+    display: inline-block;
+    color: #000;
+    font-size: 2rem;
+    border-bottom: 1px solid #000;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.3;
+    }
+  }
 }
 .subtitle {
   font-size: 6rem;
