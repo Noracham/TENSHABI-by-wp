@@ -480,7 +480,7 @@ h1 {
   color: #000;
   font-size: 2rem;
   border-bottom: 1px solid #000;
-  transition: all 0.2s;
+  transition: all 0.25s;
 }
 .news .news_link:hover {
   opacity: 0.3;
@@ -637,6 +637,12 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .shops .shop .shop_info {
+    width: 40%;
+    margin: 0 2.5%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .shops .shop .shop_info {
