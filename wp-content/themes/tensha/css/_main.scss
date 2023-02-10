@@ -88,10 +88,14 @@
   }
 }
 
-// #slider {
-//   width: 100%;
-//   height: 100vh;
-// }
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
 
 //news(お知らせ)
 .news {
@@ -276,7 +280,7 @@
         &::after {
           position: absolute;
           content: "";
-          width: 38rem;
+          width: 95%;
           height: 10px;
           background-image: url(../img/shop_bar.png);
           background-blend-mode: lighten;
