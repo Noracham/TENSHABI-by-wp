@@ -48,12 +48,7 @@
 
         //フロントページ以外はスラッグからimgパスを指定
         if (!is_home() || !is_front_page() ? $heropath = 'img/' . $slug . '_visu.jpeg' : $heropath = 'img/shop1_visu2.jpeg'); ?>
-        <!-- <section class="main_visu" style="background-image: url(<?php //echo esc_url(get_theme_file_uri($heropath)) 
-                                                                        ?>);"> -->
-        <section class="main_visu">
-            <div class="slider"><?php
-                                echo do_shortcode('[smartslider3 slider="2"]');
-                                ?></div>
+        <section class="main_visu" style="background-image: url(<?php echo esc_url(get_theme_file_uri($heropath)) ?>);">
             <ul class="menu">
                 <li class="newsli"><a href="<?php echo esc_url(home_url('/category/news')) ?>"></a>お知らせ<span>NEWS</span></li>
                 <li><a href="<?php esc_url(home_url('/category/shops')) ?>"></a>お店一覧<span>SHOPS</span></li>
