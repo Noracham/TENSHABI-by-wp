@@ -66,11 +66,13 @@
     <h1 class="subtitle news_title">お知らせ<br><span>NEWS</span></h1>
     <dl class="news_list">
         <?php
-        $args_news = ['category_name' => 'news'];
-        $the_query = new WP_Query($args_news);
+        // $args_news = ['category_name' => 'news'];
+        // $the_query = new WP_Query($args_news);
         ?>
-        <?php if ($the_query->have_posts()) :; ?>
-            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+        <?php
+        query_posts('category_name=news&posts_per_page=3'); ?>
+        <?php if (have_posts()) :; ?>
+            <?php while (have_posts()) : the_post(); ?>
                 <dl>
                     <dt><?php the_date('Y.m.d'); ?></dt>
                     <dd><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></dd>
