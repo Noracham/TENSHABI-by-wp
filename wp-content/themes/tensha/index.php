@@ -55,7 +55,7 @@
                     <p><?php the_excerpt(); ?></p>
                     <div class="shop_fl">
                         <div class="icons"><img src="img/food_list.png" alt=""><img src="img/drink_list.png" alt=""></div>
-                        <a href="<?php the_permalink() ?>">お店を見る</a>
+                        <a href="<?php echo esc_url(home_url('/category/news')) ?>">お店を見る</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 </dl>
             <?php endwhile; ?>
         <?php endif; ?>
-        <a class="news_link" href="<?php esc_url(home_url('/category/news/')) ?> ">お知らせを見る</a>
+        <a class="news_link" href="<?php echo esc_url(home_url('/category/news/')) ?> ">お知らせを見る</a>
     </dl>
 </section>
 <?php get_template_part('access'); ?>

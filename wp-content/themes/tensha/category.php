@@ -10,7 +10,9 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <li>
                     <h2><span><?php the_date('Y/m/d'); ?></span><br><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-                    <div class="news_page_thumbnail"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a></div>
+                    <?php if (has_post_thumbnail()) :; ?>
+                        <div class="news_page_thumbnail"><a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a></div>
+                    <?php endif; ?>
                 </li>
         <?php endwhile;
         endif; ?>

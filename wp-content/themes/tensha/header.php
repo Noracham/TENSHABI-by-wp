@@ -51,7 +51,7 @@
         <section class="main_visu" style="background-image: url(<?php echo esc_url(get_theme_file_uri($heropath)) ?>);">
             <ul class="menu">
                 <li class="newsli"><a href="<?php echo esc_url(home_url('/category/news')) ?>"></a>お知らせ<span>NEWS</span></li>
-                <li><a href="<?php echo esc_url(home_url('/category/shops')) ?>"></a>お店一覧<span>SHOPS</span></li>
+                <li><a href="<?php echo esc_url(home_url('')) ?>#shops"></a>お店一覧<span>SHOPS</span></li>
                 <li><a href="<?php echo esc_url(home_url('/contact/')) ?>"></a>お問い合わせ<span>CONTACT</span></li>
             </ul>
             <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-instagram.png')) ?>" alt=""></div>

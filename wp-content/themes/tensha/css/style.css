@@ -1198,7 +1198,7 @@ footer .f_link img {
 
 .news_page_list {
   max-width: 1300px;
-  margin: 5% 10%;
+  margin: 5%;
 }
 .news_page_list li {
   width: 100%;
@@ -1219,23 +1219,11 @@ footer .f_link img {
 }
 
 .news_page_thumbnail {
-  width: 60%;
+  width: 75%;
 }
 .news_page_thumbnail img {
   width: auto;
   height: auto;
   max-width: 100%;
   max-height: 100%;
-}
-
-.pagination ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.pagination ul a:hover {
-  opacity: 0.7;
-}
-.pagination li {
-  padding: 0 10px;
 }/*# sourceMappingURL=style.css.map */
