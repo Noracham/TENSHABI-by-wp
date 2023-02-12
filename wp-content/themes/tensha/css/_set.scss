@@ -13,6 +13,9 @@ body {
 main {
   background: #fff;
   padding: 200px 0;
+  @include m.mq(sp) {
+    padding: 100px 0 200px 0;
+  }
 }
 .container {
   max-width: 1920px;

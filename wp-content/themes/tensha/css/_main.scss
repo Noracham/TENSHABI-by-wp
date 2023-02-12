@@ -745,7 +745,7 @@ footer {
 //newspage
 .news_page_list {
   padding: 0;
-  max-width: 1300px;
+  max-width: 1100px;
   margin: 0 auto;
   @include m.mq(tab) {
     width: 85%;
@@ -779,7 +779,7 @@ footer {
   }
 }
 .news_page_thumbnail {
-  width: 75%;
+  width: 80%;
   @include m.mq(sp) {
     width: 100%;
   }
