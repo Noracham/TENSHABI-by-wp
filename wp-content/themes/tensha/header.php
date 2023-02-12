@@ -59,13 +59,17 @@
                                                     ?>" alt=""></div>
                 <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon_map.png'))
                                                     ?>" alt=""></div>
-            <?php } elseif (is_category('news')) {; ?>
+            <?php } elseif (is_category('news') || in_category('news')) {; ?>
                 <div class="hero_title">
                     <h1>お知らせ<br /><span>NEWS</span></h1>
                 </div>
             <?php } elseif (is_category('contact')) {; ?>
                 <div class="hero_title">
                     <h1>お問い合わせ<br /><span>CONTACT</span></h1>
+                </div>
+            <?php } elseif (is_category('shops')) {; ?>
+                <div class="hero_title">
+                    <h1><?php the_title(); ?><br /><span><?php the_tags(); ?></span></h1>
                 </div>
 
             <?php }; ?>
