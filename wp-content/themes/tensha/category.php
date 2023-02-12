@@ -1,9 +1,11 @@
 <?php get_header(); ?>
 <main>
     <?php
-    $cat = get_the_category();
-    $catname = $cat[0]->cat_name; ?>
-    <h1 class="subtitle"><?php echo $catname; ?><br><span>NEWS</span></h1>
+    //$cat = get_the_category();
+    //$catname = $cat[0]->cat_name; 
+    ?>
+    <!-- <h1 class="subtitle"><?php //echo $catname; 
+                                ?><br><span>NEWS</span></h1> -->
 
     <ul class="article_wrapper news_page_list">
         <?php //query_posts('category_name=news'); 

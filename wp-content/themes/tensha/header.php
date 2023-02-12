@@ -54,9 +54,24 @@
                 <li><a href="<?php echo esc_url(home_url('')) ?>#shops"></a>お店一覧<span>SHOPS</span></li>
                 <li><a href="<?php echo esc_url(home_url('/contact/')) ?>"></a>お問い合わせ<span>CONTACT</span></li>
             </ul>
-            <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-instagram.png')) ?>" alt=""></div>
-            <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon_map.png')) ?>" alt=""></div>
-            <div class="logo_visu">
-                <a href="<?php echo esc_url(home_url()) ?>"></a>
-            </div>
+            <?php if (is_home() || is_front_page()) {; ?>
+                <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-instagram.png'))
+                                                    ?>" alt=""></div>
+                <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon_map.png'))
+                                                    ?>" alt=""></div>
+            <?php } elseif (is_category('news')) {; ?>
+                <div class="hero_title">
+                    <h1>お知らせ<br /><span>NEWS</span></h1>
+                </div>
+            <?php } elseif (is_category('contact')) {; ?>
+                <div class="hero_title">
+                    <h1>お問い合わせ<br /><span>CONTACT</span></h1>
+                </div>
+
+            <?php }; ?>
+        </section>
+
+        <div class="logo_visu">
+            <a href="<?php echo esc_url(home_url()) ?>"></a>
+        </div>
         </section>

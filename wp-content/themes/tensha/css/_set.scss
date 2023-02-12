@@ -11,7 +11,8 @@ body {
   background-image: url(../img/background_washi.jpeg);
 }
 main {
-  background: #fff;
+  border-top: #341800 4.5px solid;
+  background: rgb(240, 241, 229);
   padding: 200px 0;
   @include m.mq(sp) {
     padding: 100px 0 200px 0;

@@ -11,7 +11,8 @@ body {
 }
 
 main {
-  background: #fff;
+  border-top: #341800 4.5px solid;
+  background: rgb(240, 241, 229);
   padding: 200px 0;
 }
 @media screen and (max-width: 768px) {
@@ -903,14 +904,7 @@ footer .f_link img {
   }
 }
 
-.shop_visu {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../img/paintV3_shop1_visu1.jpg);
-  background-position: center center;
-}
-.shop_visu .shop_title {
+.hero_title {
   z-index: 999;
   position: absolute;
   border-top: #341800 5px solid;
@@ -924,7 +918,7 @@ footer .f_link img {
   background-color: rgb(240, 241, 229);
 }
 @media screen and (max-width: 768px) {
-  .shop_visu .shop_title {
+  .hero_title {
     background-color: #341800;
     width: 100vw;
     height: 100px;
@@ -932,7 +926,7 @@ footer .f_link img {
     border-bottom: 0;
   }
 }
-.shop_visu .shop_title h1 {
+.hero_title h1 {
   position: relative;
   top: -35px;
   color: rgb(245, 90, 0);
@@ -941,20 +935,20 @@ footer .f_link img {
   padding-top: 10px;
 }
 @media screen and (max-width: 768px) {
-  .shop_visu .shop_title h1 {
+  .hero_title h1 {
     margin: 0;
     top: -5px;
     font-size: 5.3rem;
   }
 }
-.shop_visu .shop_title h1 span {
+.hero_title h1 span {
   position: relative;
   bottom: 30px;
   color: #ffba00;
   font-size: 2.2rem;
 }
 @media screen and (max-width: 768px) {
-  .shop_visu .shop_title h1 span {
+  .hero_title h1 span {
     font-size: 1.8rem;
   }
 }
