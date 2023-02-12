@@ -944,13 +944,16 @@ footer .f_link img {
 .hero_title h1 span {
   position: relative;
   bottom: 30px;
-  color: #ffba00;
   font-size: 2.2rem;
 }
 @media screen and (max-width: 768px) {
   .hero_title h1 span {
     font-size: 1.8rem;
   }
+}
+.hero_title h1 span a {
+  letter-spacing: 0.5rem;
+  color: #ffba00 !important;
 }
 
 .info {

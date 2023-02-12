@@ -69,7 +69,7 @@
                 </div>
             <?php } elseif (in_category('shops')) {; ?>
                 <div class="hero_title">
-                    <h1><?php the_title(); ?><br /><span><?php the_tags(); ?></span></h1>
+                    <h1><?php the_title(); ?><br /><span><?php the_tags(''); ?></span></h1>
                 </div>
 
             <?php }; ?>
