@@ -5,7 +5,7 @@
     $catname = $cat[0]->cat_name; ?>
     <h1 class="subtitle"><?php echo $catname; ?><br><span>NEWS</span></h1>
 
-    <ul class="news_page_list">
+    <ul class="article_wrapper news_page_list">
         <?php //query_posts('category_name=news'); 
         ?>
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
