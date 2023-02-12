@@ -744,8 +744,16 @@ footer {
 
 //newspage
 .news_page_list {
+  padding: 0;
   max-width: 1300px;
-  margin: 5%;
+  margin: 0 auto;
+  @include m.mq(tab) {
+    width: 85%;
+  }
+  @include m.mq(sp) {
+    width: 97%;
+  }
+
   li {
     width: 100%;
     border-bottom: 1px solid #000;
@@ -758,14 +766,23 @@ footer {
   }
   h2 {
     font-size: 2rem;
+    @include m.mq(sp) {
+      font-size: 1.6rem;
+    }
     span {
       font-size: 1.5rem;
       text-align: right;
+      @include m.mq(sp) {
+        font-size: 1.3rem;
+      }
     }
   }
 }
 .news_page_thumbnail {
   width: 75%;
+  @include m.mq(sp) {
+    width: 100%;
+  }
   img {
     width: auto;
     height: auto;
