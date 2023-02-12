@@ -795,19 +795,11 @@ h1 {
   .floormap .maps {
     width: 100%;
     margin: 15% auto;
-    flex-direction: column;
-    align-items: center;
   }
 }
 .floormap .maps .hand_map {
   width: 80%;
   margin-right: 2%;
-}
-@media screen and (max-width: 768px) {
-  .floormap .maps .hand_map {
-    margin-top: 5%;
-    margin-right: 0;
-  }
 }
 .floormap .maps .hand_map img {
   width: 100%;
@@ -820,7 +812,6 @@ h1 {
 }
 @media screen and (max-width: 768px) {
   .floormap .maps .g_map {
-    margin-top: 5%;
     width: 98%;
   }
 }
@@ -1199,6 +1190,11 @@ footer .f_link img {
   height: 40px;
   font-size: 2rem;
   align-self: flex-start;
+}
+@media screen and (max-width: 768px) {
+  #map-change {
+    margin-left: 1%;
+  }
 }
 
 .article_wrapper {

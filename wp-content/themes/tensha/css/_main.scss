@@ -381,8 +381,6 @@
 // floormap
 .floormap {
   background-color: rgb(240, 241, 229);
-  @include m.mq(sp) {
-  }
   .maps {
     margin: 7% auto;
     width: 70%;
@@ -393,16 +391,11 @@
     @include m.mq(sp) {
       width: 100%;
       margin: 15% auto;
-      flex-direction: column;
-      align-items: center;
     }
     .hand_map {
       width: 80%;
       margin-right: 2%;
-      @include m.mq(sp) {
-        margin-top: 5%;
-        margin-right: 0;
-      }
+
       img {
         width: 100%;
       }
@@ -413,7 +406,7 @@
       align-items: center;
       width: 100%;
       @include m.mq(sp) {
-        margin-top: 5%;
+        // margin-top: 5%;
         width: 98%;
       }
       iframe {
@@ -740,6 +733,9 @@ footer {
   height: 40px;
   font-size: 2rem;
   align-self: flex-start;
+  @include m.mq(sp) {
+    margin-left: 1%;
+  }
 }
 
 //newspage
