@@ -481,7 +481,8 @@ h1 {
   text-align: center;
 }
 .news .news_list dl {
-  padding: 1% 0;
+  margin: 0;
+  padding: 40px 0;
   width: 60%;
   display: flex;
   justify-content: flex-start;
