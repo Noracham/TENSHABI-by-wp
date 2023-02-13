@@ -55,10 +55,8 @@
                 <li><a href="<?php echo esc_url(home_url('/contact/')) ?>"></a>お問い合わせ<span>CONTACT</span></li>
             </ul>
             <?php if (is_home() || is_front_page()) {; ?>
-                <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-instagram.png'))
-                                                    ?>" alt=""></div>
-                <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon_map.png'))
-                                                    ?>" alt=""></div>
+                <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-instagram.png')) ?>" alt=""></div>
+                <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon_map.png')) ?>" alt=""></div>
             <?php } elseif (is_category('news') || in_category('news')) {; ?>
                 <div class="hero_title">
                     <h1>お知らせ<br /><span>NEWS</span></h1>
