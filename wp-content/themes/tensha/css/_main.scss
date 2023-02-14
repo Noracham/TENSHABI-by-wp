@@ -117,6 +117,9 @@
     align-items: center;
     font-size: 2rem;
     text-align: center;
+    @include m.mq(sp) {
+      padding-top: 0;
+    }
     dl {
       margin: 0;
       padding: 40px 0;
@@ -132,6 +135,7 @@
         width: 90%;
       }
       dt {
+        align-self: center;
         justify-self: start;
       }
       dd {

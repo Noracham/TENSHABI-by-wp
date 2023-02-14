@@ -483,6 +483,11 @@ h1 {
   font-size: 2rem;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .news .news_list {
+    padding-top: 0;
+  }
+}
 .news .news_list dl {
   margin: 0;
   padding: 40px 0;
@@ -503,6 +508,7 @@ h1 {
   }
 }
 .news .news_list dl dt {
+  align-self: center;
   justify-self: start;
 }
 .news .news_list dl dd a {
