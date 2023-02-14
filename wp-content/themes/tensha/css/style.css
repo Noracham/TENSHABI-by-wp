@@ -891,6 +891,11 @@ footer .f_logo img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media screen and (max-width: 768px) {
+  footer .f_logo img {
+    width: 100%;
+  }
+}
 footer .f_link {
   width: 33%;
   align-self: flex-end;

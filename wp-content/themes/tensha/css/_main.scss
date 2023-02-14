@@ -471,6 +471,9 @@ footer {
     img {
       width: 50%;
       object-fit: contain;
+      @include m.mq(sp) {
+        width: 100%;
+      }
     }
   }
   .f_link {
