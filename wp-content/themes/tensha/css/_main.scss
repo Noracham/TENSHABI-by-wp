@@ -535,10 +535,28 @@ footer {
 }
 
 .info {
+  width: 100vw;
   padding-bottom: 10%;
   background-color: rgb(240, 241, 229);
   @include m.mq(sp) {
     padding-bottom: 20%;
+  }
+  .w {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .menu_point {
+    margin-top: 100px;
+    h3 {
+      margin-top: 0;
+      font-size: 4rem;
+    }
+    .menu_point_txt {
+      padding: 0 50px;
+    }
+    p {
+      font-size: 2rem;
+    }
   }
   .genre {
     margin: 0 auto;

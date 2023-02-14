@@ -54,3 +54,12 @@ function pagination($pages = '', $range = 2)
         }
     }
 }
+//widgets
+function my_widgets_init()
+{
+    register_sidebar([
+        'name' => 'サイドバー',
+        'id' => 'sidebar',
+    ]);
+}
+add_action('widgets_init', 'my_widgets_init');

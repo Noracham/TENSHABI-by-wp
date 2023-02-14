@@ -958,6 +958,7 @@ footer .f_link img {
 }
 
 .info {
+  width: 100vw;
   padding-bottom: 10%;
   background-color: rgb(240, 241, 229);
 }
@@ -965,6 +966,23 @@ footer .f_link img {
   .info {
     padding-bottom: 20%;
   }
+}
+.info .w {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.info .menu_point {
+  margin-top: 100px;
+}
+.info .menu_point h3 {
+  margin-top: 0;
+  font-size: 4rem;
+}
+.info .menu_point .menu_point_txt {
+  padding: 0 50px;
+}
+.info .menu_point p {
+  font-size: 2rem;
 }
 .info .genre {
   margin: 0 auto;
