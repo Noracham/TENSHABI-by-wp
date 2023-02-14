@@ -958,7 +958,6 @@ footer .f_link img {
 }
 
 .info {
-  border-top: #341800 5px solid;
   padding-bottom: 10%;
   background-color: rgb(240, 241, 229);
 }
@@ -1045,7 +1044,7 @@ footer .f_link img {
   font-size: 1.6rem;
   line-height: 2.5rem;
   text-align: right;
-  margin: 7% 10% 0 0;
+  margin: 0 10% 0 0;
 }
 @media screen and (max-width: 768px) {
   .info .info_times {

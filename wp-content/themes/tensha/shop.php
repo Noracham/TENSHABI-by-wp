@@ -1,20 +1,18 @@
 <section class="info">
+    <div class="info_txt">
+        <?php the_content(); ?>
+    </div>
     <div class="genre">
         <div class="genre_in">
-            <img src="img/drink_list_white.png" alt="" /><span>飲む</span>
+            <img src="<?php echo esc_url(get_theme_file_uri('img/drink_list_white.png')) ?>" alt="" /><span>飲む</span>
         </div>
         <div class="genre_in">
-            <img src="img/food_list_white.png" alt="" /><span>食べる</span>
+            <img src="<?php echo esc_url(get_theme_file_uri('img/food_list_white.png')) ?>" alt="" /><span>食べる</span>
         </div>
         <div class="genre_in">
-            <img src="img/play.png" alt="" /><span>遊ぶ</span>
+            <img src="<?php echo esc_url(get_theme_file_uri('img/play.png')) ?>" alt="" /><span>遊ぶ</span>
         </div>
     </div>
-    <p class="info_txt">
-        串焼きが魅力の本店。<br />
-        熱々の鉄板で注文をいただいてからお焼きいたしますので、一番美味しい状態でお召し上がりいただけます。<br />
-        他にもドリンク、サブメニューもご用意しておりますのでぜひお越しください。<br />
-    </p>
     <p class="info_times">
         営業時間：午前10時から午後5時<br />
         営業日：土日、祝日
