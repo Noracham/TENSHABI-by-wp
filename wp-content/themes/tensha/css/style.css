@@ -787,6 +787,7 @@ h1 {
   background-color: rgb(240, 241, 229);
 }
 .floormap .maps {
+  max-width: 1000px;
   margin: 7% auto;
   width: 70%;
   display: flex;
