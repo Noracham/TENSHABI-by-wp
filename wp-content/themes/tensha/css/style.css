@@ -155,7 +155,7 @@ h1 {
   }
 }
 .menu li:nth-of-type(3) span {
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .menu li:not(:first-child) {
   margin-top: 5px;
@@ -1029,11 +1029,14 @@ footer .f_link img {
   font-size: 2rem;
   margin-top: 100px;
 }
+.info .menu_list_wp .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+  background-color: rgb(240, 241, 229);
+}
 .info .menu_list_wp table {
   width: 100%;
 }
 .info .menu_list_wp table th {
-  background: #000;
+  background: #271c10;
   color: #fff;
 }
 .info .genre {

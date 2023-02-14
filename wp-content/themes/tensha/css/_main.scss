@@ -598,10 +598,13 @@ footer {
   .menu_list_wp {
     font-size: 2rem;
     margin-top: 100px;
+    .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+      background-color: rgb(240, 241, 229);
+    }
     table {
       width: 100%;
       th {
-        background: #000;
+        background: #271c10;
         color: #fff;
       }
     }
