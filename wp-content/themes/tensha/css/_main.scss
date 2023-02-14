@@ -536,24 +536,23 @@ footer {
 
 .info {
   width: 100vw;
-  padding-bottom: 10%;
   background-color: rgb(240, 241, 229);
-  @include m.mq(sp) {
-    padding-bottom: 20%;
-  }
   .w {
     margin: 0 auto;
     max-width: 1200px;
   }
   .menu_point {
     margin-top: 100px;
+    @include m.mq(sp) {
+      margin-top: 0;
+    }
     h3 {
       position: relative;
       margin-top: 0;
       font-size: 4rem;
       padding: 15px 0;
       background-color: #ffedca;
-      border-top: 5px dashed #ffba00;
+      border: 5px dashed #ffba00;
       border-bottom: 5px dashed #ffba00;
       @include m.mq(sp) {
         font-size: 3.5rem;
@@ -562,7 +561,7 @@ footer {
     }
     &_txt {
       padding: 5% 3%;
-      background-color: rgb(240, 241, 229);
+      background-color: #fceed883;
       border: #341800 3px solid;
       border-radius: 50px;
       min-height: 65%;
@@ -573,7 +572,7 @@ footer {
     figure {
       text-align: center;
       img {
-        box-shadow: 0 0 10px 10px #ffefd5;
+        box-shadow: 0 0 3px 3px #a8a8a8;
       }
       figcaption {
         margin-top: 20px;
@@ -589,6 +588,17 @@ footer {
       font-size: 2rem;
       @include m.mq(sp) {
         font-size: 1.7rem;
+      }
+    }
+  }
+  .menu_list_wp {
+    font-size: 2rem;
+    margin-top: 100px;
+    table {
+      width: 100%;
+      th {
+        background: #000;
+        color: #fff;
       }
     }
   }
@@ -632,7 +642,7 @@ footer {
         font-size: 4rem;
         color: #fff;
         @include m.mq(sp) {
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
       }
     }
@@ -667,6 +677,7 @@ footer {
   }
 }
 .shop_menu {
+  margin-top: 10%;
   background-color: #fff;
 }
 .pickup_menu {

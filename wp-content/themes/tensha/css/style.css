@@ -959,13 +959,7 @@ footer .f_link img {
 
 .info {
   width: 100vw;
-  padding-bottom: 10%;
   background-color: rgb(240, 241, 229);
-}
-@media screen and (max-width: 768px) {
-  .info {
-    padding-bottom: 20%;
-  }
 }
 .info .w {
   margin: 0 auto;
@@ -974,13 +968,18 @@ footer .f_link img {
 .info .menu_point {
   margin-top: 100px;
 }
+@media screen and (max-width: 768px) {
+  .info .menu_point {
+    margin-top: 0;
+  }
+}
 .info .menu_point h3 {
   position: relative;
   margin-top: 0;
   font-size: 4rem;
   padding: 15px 0;
   background-color: #ffedca;
-  border-top: 5px dashed #ffba00;
+  border: 5px dashed #ffba00;
   border-bottom: 5px dashed #ffba00;
 }
 @media screen and (max-width: 768px) {
@@ -991,7 +990,7 @@ footer .f_link img {
 }
 .info .menu_point_txt {
   padding: 5% 3%;
-  background-color: rgb(240, 241, 229);
+  background-color: rgba(252, 238, 216, 0.5137254902);
   border: #341800 3px solid;
   border-radius: 50px;
   min-height: 65%;
@@ -1002,7 +1001,7 @@ footer .f_link img {
   text-align: center;
 }
 .info .menu_point figure img {
-  box-shadow: 0 0 10px 10px #ffefd5;
+  box-shadow: 0 0 3px 3px #a8a8a8;
 }
 .info .menu_point figure figcaption {
   margin-top: 20px;
@@ -1020,6 +1019,17 @@ footer .f_link img {
   .info .menu_point p {
     font-size: 1.7rem;
   }
+}
+.info .menu_list_wp {
+  font-size: 2rem;
+  margin-top: 100px;
+}
+.info .menu_list_wp table {
+  width: 100%;
+}
+.info .menu_list_wp table th {
+  background: #000;
+  color: #fff;
 }
 .info .genre {
   margin: 0 auto;
@@ -1069,7 +1079,7 @@ footer .f_link img {
 }
 @media screen and (max-width: 768px) {
   .info .genre .genre_in span {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 .info .info_txt {
@@ -1108,6 +1118,7 @@ footer .f_link img {
 }
 
 .shop_menu {
+  margin-top: 10%;
   background-color: #fff;
 }
 
