@@ -52,7 +52,7 @@
             <ul class="menu">
                 <li class="newsli"><a href="<?php echo esc_url(home_url('/category/news')) ?>"></a>お知らせ<span>NEWS</span></li>
                 <li><a href="<?php echo esc_url(home_url('')) ?>#shops"></a>お店一覧<span>SHOPS</span></li>
-                <li><a href="<?php echo esc_url(home_url('/contact/')) ?>"></a>お問い合わせ<span>CONTACT</span></li>
+                <li><a href="<?php echo esc_url(home_url('/contact')) ?>"></a>お問い合わせ<span>CONTACT</span></li>
             </ul>
             <?php if (is_home() || is_front_page()) {; ?>
                 <div class="link_icon"><img src="<?php echo esc_url(get_theme_file_uri('img/Icon awesome-instagram.png')) ?>" alt=""></div>
@@ -61,7 +61,7 @@
                 <div class="hero_title">
                     <h1>お知らせ<br /><span>NEWS</span></h1>
                 </div>
-            <?php } elseif (is_category('contact')) {; ?>
+            <?php } elseif (home_url('/contact')) {; ?>
                 <div class="hero_title">
                     <h1>お問い合わせ<br /><span>CONTACT</span></h1>
                 </div>
