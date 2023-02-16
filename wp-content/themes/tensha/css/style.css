@@ -753,6 +753,10 @@ h1 {
   color: #000;
   font-size: 2rem;
   border-bottom: 1px solid #000;
+  transition: all 0.3s;
+}
+.shops .shop .shop_info .shop_fl a:hover {
+  opacity: 0.3;
 }
 .shops .shop .shop_info .shop_fl .icons img {
   height: 55px;
@@ -1304,6 +1308,10 @@ footer .f_link img {
   padding: 20px 0;
   list-style: none;
   border-collapse: collapse;
+  transition: all 0.3s;
+}
+.news_page_list li:hover {
+  background: rgb(223, 224, 211);
 }
 .news_page_list li:first-child {
   border-top: 1px solid #000;
