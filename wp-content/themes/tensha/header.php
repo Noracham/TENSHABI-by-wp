@@ -61,13 +61,13 @@
                 <div class="hero_title">
                     <h1>お知らせ<br /><span>NEWS</span></h1>
                 </div>
-            <?php } elseif (home_url('/contact')) {; ?>
-                <div class="hero_title">
-                    <h1>お問い合わせ<br /><span>CONTACT</span></h1>
-                </div>
             <?php } elseif (in_category('shops')) {; ?>
                 <div class="hero_title">
                     <h1><?php the_title(); ?><br /><span><?php the_tags(''); ?></span></h1>
+                </div>
+            <?php } elseif (home_url('/contact')) {; ?>
+                <div class="hero_title">
+                    <h1>お問い合わせ<br /><span>CONTACT</span></h1>
                 </div>
 
             <?php }; ?>

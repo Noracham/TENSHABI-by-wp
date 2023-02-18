@@ -557,7 +557,7 @@ footer {
     max-width: 1200px;
   }
   .menu_point {
-    margin-top: 100px;
+    margin-top: 70px;
     @include m.mq(sp) {
       margin-top: 0;
     }
@@ -587,7 +587,7 @@ footer {
     figure {
       text-align: center;
       img {
-        box-shadow: 0 0 3px 3px #a8a8a8;
+        box-shadow: 0 0 10px 3px #c8c8c8;
       }
       figcaption {
         margin-top: 20px;
@@ -652,6 +652,7 @@ footer {
         padding: 0 10px;
       }
       &:last-child {
+        opacity: 0.5;
         img {
           padding: 0 5px;
         }
