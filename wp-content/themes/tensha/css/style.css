@@ -1248,8 +1248,13 @@ footer .f_link img {
 }
 .other_menu .other_menu_list {
   width: 35%;
-  margin-left: 5%;
   font-size: 2.3rem;
+  margin: 0 3%;
+}
+@media screen and (max-width: 768px) {
+  .other_menu .other_menu_list {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 1024px) {
   .other_menu .other_menu_list {
@@ -1264,14 +1269,19 @@ footer .f_link img {
   }
 }
 .other_menu .other_menu_list dl {
+  font-size: 2.3rem;
   margin: 0;
-  padding: 5% 0;
-  border-bottom: 1px solid #000;
+  padding: 4% 5%;
   display: flex;
   justify-content: space-between;
 }
+.other_menu .other_menu_list dl:nth-of-type(odd) {
+  background: rgb(240, 241, 229);
+}
 .other_menu .other_menu_list dl:first-child {
-  border-top: 1px solid #000;
+  padding: 2% 5%;
+  background: #271c10;
+  color: #fff;
 }
 
 #map-change {

@@ -782,8 +782,11 @@ footer {
   }
   .other_menu_list {
     width: 35%;
-    margin-left: 5%;
     font-size: 2.3rem;
+    margin: 0 3%;
+    @include m.mq(sp) {
+      margin: 0;
+    }
 
     @include m.mq(tab) {
       font-size: 2rem;
@@ -794,13 +797,18 @@ footer {
       width: 95%;
     }
     dl {
+      font-size: 2.3rem;
       margin: 0;
-      padding: 5% 0;
-      border-bottom: 1px solid #000;
+      padding: 4% 5%;
       display: flex;
       justify-content: space-between;
+      &:nth-of-type(odd) {
+        background: rgb(240, 241, 229);
+      }
       &:first-child {
-        border-top: 1px solid #000;
+        padding: 2% 5%;
+        background: #271c10;
+        color: #fff;
       }
     }
   }
