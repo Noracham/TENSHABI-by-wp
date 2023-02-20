@@ -25,27 +25,34 @@
         <?php
         $group = get_field('menu_img_group');
         $use_group = $group['menu_img_group1']; ?>
-        <div class="pickup_one">
-            <div class="pickup_img">
-                <img src="<?php echo $use_group['shop_img'] ?>" alt="" />
-            </div>
-            <p><?php echo $use_group['shop_img_menu'] ?><span><?php echo $use_group['shop_img_price']; ?></span></p>
-        </div>
-        <div class="pickup_one">
-            <div class="pickup_img">
-                <img src="<?php $use_group = $group['menu_img_group2'];
-                            echo $use_group['shop_img'] ?>" alt="" />
-            </div>
-            <p><?php echo $use_group['shop_img_menu'] ?><span><?php echo $use_group['shop_img_price']; ?></span></p>
-        </div>
-        <div class="pickup_one">
-            <div class="pickup_img">
-                <img src="<?php $use_group = $group['menu_img_group2'];
-                            echo $use_group['shop_img'] ?>" alt="" />
-            </div>
-            <p><?php echo $use_group['shop_img_menu'] ?><span><?php echo $use_group['shop_img_price']; ?></span></p>
-        </div>
+        <?php if ($group['menu_img_group1']) :; ?>
 
+            <div class="pickup_one">
+                <div class="pickup_img">
+                    <img src="<?php echo $use_group['shop_img'] ?>" alt="" />
+                </div>
+                <p><?php echo $use_group['shop_img_menu'] ?><span><?php echo $use_group['shop_img_price']; ?></span></p>
+            </div>
+        <?php endif; ?>
+        <?php if ($group['menu_img_group2']) :; ?>
+            <div class="pickup_one">
+                <div class="pickup_img">
+                    <img src="<?php $use_group = $group['menu_img_group2'];
+                                echo $use_group['shop_img'] ?>" alt="" />
+                </div>
+                <p><?php echo $use_group['shop_img_menu'] ?><span><?php echo $use_group['shop_img_price']; ?></span></p>
+            </div>
+        <?php endif; ?>
+        <?php if ($group['menu_img_group3']) :; ?>
+
+            <div class="pickup_one">
+                <div class="pickup_img">
+                    <img src="<?php $use_group = $group['menu_img_group2'];
+                                echo $use_group['shop_img'] ?>" alt="" />
+                </div>
+                <p><?php echo $use_group['shop_img_menu'] ?><span><?php echo $use_group['shop_img_price']; ?></span></p>
+            </div>
+        <?php endif; ?>
     </div>
     <?php if (get_field('menu_list_food') || get_field('menu_list_food')) :; ?>
         <div class="other_menu">
