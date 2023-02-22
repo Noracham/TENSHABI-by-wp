@@ -47,8 +47,8 @@
         $slug = $post->post_name;
 
         //フロントページ以外はスラッグからimgパスを指定
-        if (!is_home() || !is_front_page() ? $heropath = 'img/' . $slug . '_visu.jpeg' : $heropath = 'img/shop1_visu2.jpeg'); ?>
-        <section class="main_visu" style="background-image: url(<?php echo esc_url(get_theme_file_uri($heropath)) ?>);">
+        if (!is_home() || !is_front_page() ? $heropath = get_the_post_thumbnail_url() : $heropath = get_theme_file_uri('img/')); ?>
+        <section class="main_visu" style="background-image: url(<?php echo $heropath ?>);">
             <ul class="menu">
                 <li class="newsli"><a href="<?php echo esc_url(home_url('/category/news')) ?>"></a>お知らせ<span>NEWS</span></li>
                 <li><a href="<?php echo esc_url(home_url('')) ?>#shops"></a>お店一覧<span>SHOPS</span></li>

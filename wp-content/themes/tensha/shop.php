@@ -47,7 +47,7 @@
 
             <div class="pickup_one">
                 <div class="pickup_img">
-                    <img src="<?php $use_group = $group['menu_img_group2'];
+                    <img src="<?php $use_group = $group['menu_img_group3'];
                                 echo $use_group['shop_img'] ?>" alt="" />
                 </div>
                 <p><?php echo $use_group['shop_img_menu'] ?><span><?php echo $use_group['shop_img_price']; ?></span></p>

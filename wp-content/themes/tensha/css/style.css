@@ -7,6 +7,7 @@ html {
 }
 
 body {
+  display: none;
   background-image: url(../img/background_washi.jpeg);
 }
 
@@ -602,13 +603,22 @@ h1 {
   }
 }
 .appeal .appeal_img .ap_i {
+  position: relative;
   opacity: 0;
-  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.357);
 }
 @media screen and (max-width: 768px) {
   .appeal .appeal_img .ap_i {
     box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.357);
   }
+}
+.appeal .appeal_img .ap_i::after {
+  box-shadow: inset 0 0 100px -50px rgb(255, 255, 255);
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 .appeal .appeal_img .ap_i:nth-of-type(1) {
   background-image: url(../img/paintV3_shop1_visu1.jpg);
@@ -657,6 +667,9 @@ h1 {
     padding: 25% 0;
   }
 }
+.shops .even {
+  flex-direction: row-reverse;
+}
 .shops .shop {
   opacity: 0;
   padding: 6% 0;
@@ -666,7 +679,7 @@ h1 {
 @media screen and (max-width: 1024px) {
   .shops .shop {
     padding: 15% 0;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 }
@@ -769,7 +782,7 @@ h1 {
   width: 50%;
   max-width: 750px;
   border-radius: 22% 46% 57% 43%/44% 33% 27% 20%;
-  background-color: #000;
+  background-color: #ff8800;
 }
 @media screen and (max-width: 1024px) {
   .shops .shop .shop_frame {
@@ -1271,7 +1284,7 @@ footer .f_link img {
 .other_menu .other_menu_list dl {
   font-size: 2.3rem;
   margin: 0;
-  padding: 4% 5%;
+  padding: 3% 5%;
   display: flex;
   justify-content: space-between;
 }
@@ -1528,4 +1541,34 @@ input[type=submit]:hover {
   input[type=submit] {
     font-size: 1.5rem;
   }
+}
+.shop_play .shop_play_main {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .shop_play .shop_play_main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.shop_play .shop_play_main .shop_play_img {
+  position: relative;
+  width: 35%;
+}
+@media screen and (max-width: 1024px) {
+  .shop_play .shop_play_main .shop_play_img {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .shop_play .shop_play_main .shop_play_img {
+    width: 95%;
+  }
+}
+.shop_play .shop_play_main .shop_play_img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

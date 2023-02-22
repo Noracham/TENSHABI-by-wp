@@ -19,10 +19,12 @@
     <?php
     $args = ['category_name' => 'shops'];
     $post_data = get_posts($args);
+    $count = 0;
     ?>
     <?php foreach ($post_data as $post) : setup_postdata($post); ?>
-        <?php if (($wp_query->current_post + 1) % 2 !== 0) { ?>
-            <div class="shop">
+        <?php $count++;
+        if ($count % 2 === 0) { ?>
+            <div class="shop even">
                 <div class="shop_info">
                     <h2><?php the_title() ?></h2>
                     <p><?php the_excerpt(); ?></p>
@@ -32,24 +34,16 @@
                     </div>
                 </div>
                 <div class="shop_frame">
+                    <div class="shop_img" <?php echo $bg_style; ?>></div>
                     <?php
                     if (has_post_thumbnail()) {
                         $img_url = wp_get_attachment_url(get_post_thumbnail_id());
                         $bg_style = 'style="background-image:url(' . $img_url . ')"';
                     }; ?>
-                    <div class="shop_img" <?php echo $bg_style; ?>></div>
                 </div>
             </div>
         <?php } else { ?>
-            <div class="shop">
-                <div class="shop_frame">
-                    <?php
-                    if (has_post_thumbnail()) {
-                        $img_url = wp_get_attachment_url(get_post_thumbnail_id());
-                        $bg_style = 'style="background-image:url(' . $img_url . ')"';
-                    }; ?>
-                    <div class="shop_img" <?php echo $bg_style; ?>></div>
-                </div>
+            <div class="shop odd">
                 <div class="shop_info">
                     <h2><?php the_title() ?></h2>
                     <p><?php the_excerpt(); ?></p>
@@ -58,6 +52,16 @@
                         <a href="<?php the_permalink() ?>">お店を見る</a>
                     </div>
                 </div>
+                <div class="shop_frame">
+                    <?php
+                    if (has_post_thumbnail()) {
+                        $img_url = wp_get_attachment_url(get_post_thumbnail_id());
+                        $bg_style = 'style="background-image:url(' . $img_url . ')"';
+                    }; ?>
+                    <div class="shop_img" <?php echo $bg_style; ?>></div>
+                </div>
+
+
             </div>
         <?php } ?>
     <?php endforeach; ?>

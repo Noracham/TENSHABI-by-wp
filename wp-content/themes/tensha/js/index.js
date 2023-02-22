@@ -5,6 +5,9 @@ $(function () {
     $(this).toggleClass("active");
   });
 
+  $(document).ready(function () {
+    $("body").fadeIn(1500);
+  });
   //main
   //appeal
   $(window).on("load resize", function () {
@@ -18,21 +21,21 @@ $(function () {
   });
 
   //shops
-  $(window).on("load resize", function () {
-    let n_width = $(window).width();
-    console.log(n_width);
-    if (n_width < 1024) {
-      $(".shop:nth-of-type(odd) .shop_frame").remove();
-      $(".shop:nth-of-type(odd)").prepend(
-        '<div class="shop_frame odd_color"><div class="shop_img"></div></div>'
-      );
-    } else {
-      $(".shop:nth-of-type(odd) .shop_frame").remove();
-      $(".shop:nth-of-type(odd)").append(
-        '<div class="shop_frame odd_color"><div class="shop_img"></div></div>'
-      );
-    }
-  });
+  // $(window).on("load resize", function () {
+  //   let n_width = $(window).width();
+  //   console.log(n_width);
+  //   if (n_width < 1024) {
+  //     $(".shop:nth-of-type(odd) .shop_frame").remove();
+  //     $(".shop:nth-of-type(odd)").prepend(
+  //       '<div class="shop_frame odd_color"><div class="shop_img"></div></div>'
+  //     );
+  //   } else {
+  //     $(".shop:nth-of-type(odd) .shop_frame").remove();
+  //     $(".shop:nth-of-type(odd)").append(
+  //       '<div class="shop_frame odd_color"><div class="shop_img"></div></div>'
+  //     );
+  //   }
+  // });
 
   //access
   $("#map-change").change(() => {
