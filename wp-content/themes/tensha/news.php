@@ -5,9 +5,9 @@
 
     <?php if (have_posts()) :; ?>
         <div class="prev_next">
-            <p class="prev"><?php previous_post_link('%link', '< 前の記事', true); ?></p>
-            <p class="back_page"><a href="<?php echo esc_url(home_url('/category/news')); ?>">記事一覧</a></p>
-            <p class="next"><?php next_post_link('%link', '次の記事 >', true); ?></p>
+            <p class="prev"><?php previous_post_link('%link', '', true); ?>< 前の記事</p>
+                    <p class="back_page"><a href="<?php echo esc_url(home_url('/category/news')); ?>">記事一覧</a></p>
+                    <p class="next"><?php next_post_link('%link', '', true); ?>次の記事 ></p>
         </div>
     <?php endif; ?>
 </article>

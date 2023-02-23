@@ -860,7 +860,7 @@ footer {
 .news_one {
   display: flex;
   flex-direction: column;
-  max-width: 1000px;
+  max-width: 900px;
   width: 60%;
   padding: 60px 5% 0 5%;
   margin: 0 auto;
@@ -910,6 +910,10 @@ footer {
     transition: all 0.3s;
     background: #fff;
     border-radius: 20px;
+    @include m.mq(sp) {
+      width: 90%;
+      padding: 20px 5%;
+    }
     p {
       font-size: 1.7rem;
       margin: 0;
@@ -936,6 +940,7 @@ footer {
     border-radius: 10px;
     transition: all 0.2s;
     @include m.mq(sp) {
+      height: 45px;
       width: 50%;
       font-size: 1.7rem;
     }
@@ -1038,11 +1043,25 @@ footer {
     width: 100%;
   }
   .prev {
+    width: 30%;
+    max-width: 150px;
+    position: relative;
     border-radius: 10px;
-    padding: 5px 30px;
+    padding: 5px 0;
     background-color: rgb(69, 36, 0);
     margin-right: auto;
+    text-align: center;
+    color: #fff;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.7;
+    }
     a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       color: #fff;
     }
     @include m.mq(sp) {
@@ -1054,10 +1073,24 @@ footer {
   }
   .next {
     margin-left: auto;
+    width: 30%;
+    max-width: 150px;
+    position: relative;
     border-radius: 10px;
-    padding: 5px 30px;
+    padding: 5px 0;
     background-color: rgb(69, 36, 0);
+    text-align: center;
+    color: #fff;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.7;
+    }
     a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       color: #fff;
     }
     @include m.mq(sp) {
@@ -1068,11 +1101,18 @@ footer {
     }
   }
   .back_page {
+    width: 30%;
+    max-width: 150px;
+
     text-align: center;
     border-radius: 10px;
-    padding: 5px 40px;
+    padding: 5px 0;
     background-color: rgb(69, 36, 0);
     margin: auto;
+    transition: all 0.2s;
+    &:hover {
+      opacity: 0.7;
+    }
     a {
       color: #fff;
     }
