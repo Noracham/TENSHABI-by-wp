@@ -857,7 +857,47 @@ footer {
   .page_content {
   }
 }
-
+.news_one {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 60%;
+  padding: 60px 5% 0 5%;
+  margin: 0 auto;
+  list-style: none;
+  border-collapse: collapse;
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 20px;
+  @include m.mq(tab) {
+    width: 80%;
+  }
+  @include m.mq(sp) {
+    width: 95%;
+    padding: 20px 2.5%;
+  }
+  h1 {
+    font-size: 3rem;
+    border-bottom: 2px solid rgb(69, 36, 0);
+    padding-bottom: 10px;
+    @include m.mq(sp) {
+      font-size: 2.3rem;
+    }
+    span {
+      font-size: 1.5rem;
+      @include m.mq(sp) {
+        font-size: 1.3rem;
+      }
+    }
+  }
+  p {
+    font-size: 1.7rem;
+    @include m.mq(sp) {
+      font-size: 1.4rem;
+      line-height: 2.4rem;
+    }
+  }
+}
 .news_page_list {
   li {
     display: flex;
@@ -984,18 +1024,64 @@ footer {
   }
 }
 .prev_next {
-  margin: 100px auto;
-  width: 80%;
+  margin: 70px auto;
+  width: 75%;
+  max-width: 550px;
   display: flex;
   justify-content: center;
+  font-size: 1rem;
+  @include m.mq(tab) {
+    width: 95%;
+  }
+  @include m.mq(sp) {
+    margin: 20px auto;
+    width: 100%;
+  }
   .prev {
+    border-radius: 10px;
+    padding: 5px 30px;
+    background-color: rgb(69, 36, 0);
     margin-right: auto;
+    a {
+      color: #fff;
+    }
+    @include m.mq(sp) {
+      width: 30%;
+      font-size: 1.3rem;
+      text-align: center;
+      padding: 5px 0;
+    }
   }
   .next {
     margin-left: auto;
+    border-radius: 10px;
+    padding: 5px 30px;
+    background-color: rgb(69, 36, 0);
+    a {
+      color: #fff;
+    }
+    @include m.mq(sp) {
+      width: 30%;
+      font-size: 1.3rem;
+      text-align: center;
+      padding: 5px 0;
+    }
   }
   .back_page {
     text-align: center;
+    border-radius: 10px;
+    padding: 5px 40px;
+    background-color: rgb(69, 36, 0);
+    margin: auto;
+    a {
+      color: #fff;
+    }
+    @include m.mq(sp) {
+      width: 30%;
+      font-size: 1.3rem;
+      text-align: center;
+      padding: 5px 0;
+    }
   }
 }
 //contact

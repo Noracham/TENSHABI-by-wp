@@ -1328,6 +1328,58 @@ footer .f_link img {
   font-size: 2rem;
   line-height: 3.5rem;
 }
+.news_one {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 60%;
+  padding: 60px 5% 0 5%;
+  margin: 0 auto;
+  list-style: none;
+  border-collapse: collapse;
+  transition: all 0.3s;
+  background: #fff;
+  border-radius: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .news_one {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news_one {
+    width: 95%;
+    padding: 20px 2.5%;
+  }
+}
+.news_one h1 {
+  font-size: 3rem;
+  border-bottom: 2px solid rgb(69, 36, 0);
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .news_one h1 {
+    font-size: 2.3rem;
+  }
+}
+.news_one h1 span {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .news_one h1 span {
+    font-size: 1.3rem;
+  }
+}
+.news_one p {
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 768px) {
+  .news_one p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+  }
+}
+
 .news_page_list li {
   display: flex;
   flex-direction: column;
@@ -1463,19 +1515,75 @@ footer .f_link img {
 }
 
 .prev_next {
-  margin: 100px auto;
-  width: 80%;
+  margin: 70px auto;
+  width: 75%;
+  max-width: 550px;
   display: flex;
   justify-content: center;
+  font-size: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .prev_next {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .prev_next {
+    margin: 20px auto;
+    width: 100%;
+  }
 }
 .prev_next .prev {
+  border-radius: 10px;
+  padding: 5px 30px;
+  background-color: rgb(69, 36, 0);
   margin-right: auto;
+}
+.prev_next .prev a {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .prev_next .prev {
+    width: 30%;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px 0;
+  }
 }
 .prev_next .next {
   margin-left: auto;
+  border-radius: 10px;
+  padding: 5px 30px;
+  background-color: rgb(69, 36, 0);
+}
+.prev_next .next a {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .prev_next .next {
+    width: 30%;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px 0;
+  }
 }
 .prev_next .back_page {
   text-align: center;
+  border-radius: 10px;
+  padding: 5px 40px;
+  background-color: rgb(69, 36, 0);
+  margin: auto;
+}
+.prev_next .back_page a {
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .prev_next .back_page {
+    width: 30%;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 5px 0;
+  }
 }
 
 .contact {

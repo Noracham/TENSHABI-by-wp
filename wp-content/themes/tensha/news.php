@@ -1,4 +1,4 @@
-<article class="article_wrapper">
+<article class="news_one article_wrapper">
     <h1 class="page_title"><span><?php the_time('Y/m/d'); ?></span><br><?php the_title(); ?></h1>
     <div class="news_page_thumbnail"><?php the_post_thumbnail(); ?></div>
     <div class="page_content"><?php the_content(); ?></div>
