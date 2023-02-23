@@ -35,7 +35,7 @@ function pagination($pages = '', $range = 2)
         echo '<ul>';
 
         if ($paged > 1) {
-            echo '<li class="prev"><a href="' . esc_url(get_pagenum_link($paged - 1)) . '">前のページ</a></li>';
+            echo '<li class="prev"><a href="' . esc_url(get_pagenum_link($paged - 1)) . '"><</a></li>';
         }
         for ($i = 1; $i <= $pages; $i++) {
             if (1 != $pages && (!($i >= $paged + $range + 1 || $i <= $paged - $range - 1) || $pages <= $showitems)) {
@@ -48,7 +48,7 @@ function pagination($pages = '', $range = 2)
         }
 
         if ($paged < $pages) {
-            echo '<li class="next"><a href="' . esc_url(get_pagenum_link($paged + 1)) . '">次のページ</a>';
+            echo '<li class="next"><a href="' . esc_url(get_pagenum_link($paged + 1)) . '">></a>';
             echo '</ul>';
             echo '</div>';
         }
